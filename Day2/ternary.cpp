@@ -8,3 +8,4 @@ int main(){
     cin>>num;
     cout<<(num>0?"Positive\n":"Negetive\n");
     return 0;
+}
