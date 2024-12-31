@@ -6,7 +6,11 @@ int main(){
     cout<<"Enter an Integer!\n";
     cin>>n;
     for(i=1;i<=n;i++){
-        sum += n;
+        if (i%2 == 0){
+            cout<<i<<endl;
+            sum += n;
+        }
+        
     }
     cout<<"The Sum of First "<<n<<" Integers: "<<sum<<endl;
     return 0;
