@@ -7,7 +7,7 @@ int main()
     
     for (int j = 0; j < n; j++)
     {
-        char start = 65;
+        char start = 'A';
             for (int i = 0; i < n; i++)
         {   
             cout<<start;
