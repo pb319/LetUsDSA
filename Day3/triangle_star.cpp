@@ -10,7 +10,7 @@ int main()
         
         for(int j=0;j<num;j++)
         {
-            cout<<"*";
+            cout<<"*^";
         }
         cout<<"\n";
         num ++ ;
