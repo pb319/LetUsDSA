@@ -13,7 +13,6 @@ int main()
         {
             // cout<<"Inner Workign";
             cout<<letter;
-            // cout<<"It's Working";
         }
         letter++;
         cout<<'\n';
