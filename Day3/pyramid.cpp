@@ -1,34 +1,37 @@
+// write a code for the following pattern
+//    1
+//   121
+//  12321
+// 1234321
+
+
 #include<iostream>
 using namespace std;
 
 int main()
 {
-    int line = 4;
+    int line = 5;
+    int count = (1 + (line-1)*2);
+
     for(int i=0;i<line;i++)
-    {   
-        
-        if(i+1!=line)
-            {
-                cout<<" ";
-            }
-        for(int j=0;j<i;j++)
+    {
+        for(int j=line-i;j>1;j--)
         {
-            
-            cout<<j+1;
+            cout<<" ";
         }
 
-        cout<<i+1;
-
-        for(int k=i;k>0;k--)
+        for(int k=0;k<=i;k++)
         {
-            cout<<k;
+            cout<<k+1;
+        }
+
+        for(int k=0;k<i;k++)
+        {
+            cout<<k+1;
         }
         
-        // if(i+1!=line)
-        //     {
-        //         cout<<" ";
-        //     }
         cout<<"\n";
+
     }
     return 0;
 }
