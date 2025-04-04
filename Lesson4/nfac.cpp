@@ -15,6 +15,6 @@ int nFac(int N)
 
 int main()
 {
-    cout<<"Result :"<<nFac(5)<<endl;
+    cout<<"Result :"<<nFac(6)<<endl;
     return 0;
 }
