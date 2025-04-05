@@ -15,7 +15,9 @@ int main()
     a = 5;
     b = 4;
 
-    cout<< "Sum of "<<a<<" and "<<b<<": "<<sum2(a,b)<<endl;
+    cout<< "Sum is :"<<sum2(a,b)<<endl;
+    cout<<"Still a,b are: "<<a<<" and "<<b<<"\n";
+
     return 0;
 
 }
