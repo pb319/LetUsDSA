@@ -21,7 +21,7 @@ int binCoff(int n, int r)
         coff *= n;
         n--;
     }
-    return (float)coff/fac(r);
+    return coff/fac(r);
 }
 
 int main()
