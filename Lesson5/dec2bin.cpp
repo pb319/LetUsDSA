@@ -6,9 +6,7 @@ using namespace std;
 void d2b(int n)
 {
     int div = 2;
-    int r,ans =0;
-    int count = 0;
-    int pow = 1;
+    int r,ans =0, pow = 1;
     while(n>0)
     {   
         r = n%2;
@@ -23,6 +21,6 @@ void d2b(int n)
 
 int main()
 {
-    d2b(10);
+    d2b(50);
     return 0;
 }
