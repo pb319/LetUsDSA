@@ -3,14 +3,14 @@
 #include<iostream>
 using namespace std;
 
-void d2b(int n)
+void dec2bin(int decNum)
 {
     int div = 2;
     int r,ans =0, pow = 1;
-    while(n>0)
+    while(decNum>0)
     {   
-        r = n%2;
-        n /= 2; 
+        r = decNum%2;
+        decNum /= 2; 
         ans = ans + pow*r;
         pow *= 10;
 
