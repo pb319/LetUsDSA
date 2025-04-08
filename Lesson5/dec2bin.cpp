@@ -21,6 +21,6 @@ void dec2bin(int decNum)
 
 int main()
 {
-    d2b(50);
+    dec2bin(50);
     return 0;
 }
