@@ -10,7 +10,7 @@ int bin2dec(int binNum)
         int dig = binNum%10; 
         // cout<<"dig :"<<dig<<"\n";
         // cout<<"power :"<<pow<<"\n";
-        binNum = (binNum - dig)/10;
+        binNum = binNum/10;
         ans += (dig * pow);
         // cout<<"ans :"<<ans<<"\n";
         
