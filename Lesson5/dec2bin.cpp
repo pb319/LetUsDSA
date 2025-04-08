@@ -3,7 +3,7 @@
 #include<iostream>
 using namespace std;
 
-void dec2bin(int decNum)
+int dec2bin(int decNum)
 {
     int div = 2;
     int r,ans =0, pow = 1;
@@ -15,12 +15,15 @@ void dec2bin(int decNum)
         pow *= 10;
 
     }
-    cout<<ans<<endl;
-    return ;
+    return ans;
 }
 
 int main()
 {
-    dec2bin(50);
+    cout<< dec2bin(50)<< "\n" ;
+    for(int i=0;i<10;i++)
+    {
+        cout<<dec2bin(i+1)<<endl;
+    }
     return 0;
 }
