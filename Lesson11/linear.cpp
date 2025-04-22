@@ -13,5 +13,5 @@ int sumN(int N){
 }
 
 int main(){
-    cout<<"Sum: "<<sumN(10)<<endl;
+    cout<<"Sum: "<<sumN(11)<<endl;
 }
