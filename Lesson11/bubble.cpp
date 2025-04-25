@@ -1,4 +1,4 @@
-//Write a programme to sort a given array using "Bubble Sort" 
+//Write a programme to sort a given array using "Bubble Sort" [O(n^2)]
 #include<iostream>
 #include<vector>
 using namespace std;

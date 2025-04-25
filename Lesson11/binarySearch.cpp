@@ -1,4 +1,4 @@
-//Write a programme to implement "Binary Search" given a sorted* array
+//Write a programme to implement "Binary Search" given a sorted* array [O(logn)]
 #include<iostream>
 #include<vector>
 using namespace std;
