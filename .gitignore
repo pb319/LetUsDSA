@@ -1,0 +1,57 @@
+# Ignore object files and compiled binaries
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.so
+*.dll
+
+# Ignore generated files like core dumps
+core
+*.stackdump
+
+# Ignore build directories
+/build/
+/bin/
+/debug/
+/release/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE/editor-specific files
+# VS Code
+.vscode/
+*.code-workspace
+
+# CLion/JetBrains
+.idea/
+cmake-build-*/
+
+# Code::Blocks
+*.depend
+*.layout
+*.cbp
+
+# DevC++
+*.layout
+*.dev
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Ignore logs
+*.log
+
+# Backup files
+*~
+*.bak
+*.swp
+
+# Ignore test output
+test_output.txt
