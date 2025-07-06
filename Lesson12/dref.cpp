@@ -6,7 +6,7 @@ int main(){
     int a = 10;
     int* ptr = &a;
 
-    cout<<"Value at a: "<< a <<endl;
+    cout<<"Value at a: "<< a  <<endl;
     cout<<"Value at adress o the pointer: "<< *(ptr)<< endl;
     return 0;
 }
