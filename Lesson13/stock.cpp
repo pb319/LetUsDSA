@@ -2,7 +2,13 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int maxProfit(int arr[]){
     
+
+}
+
+
+int main(){
+
     return 0;
 }
