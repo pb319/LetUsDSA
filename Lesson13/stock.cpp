@@ -31,7 +31,7 @@ int main(){
     cout<<endl;
     cout<<"Array Size: "<<arr.size();
     cout<<endl;
-    cout<<"Max Profit: "<< maxProfit(arr);
+    cout<<"Maximum Profit: "<< maxProfit(arr);
     cout<<endl;
 
     return 0;
