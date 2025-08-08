@@ -1,4 +1,4 @@
-// Write a program to return the maximum amount of water container can store
+// Write a program to return the maximum amount of water container can store --> O(n^2)
 // container = {1,8,6,2,5,4,8,3,7}
 #include<iostream>
 #include<vector>
