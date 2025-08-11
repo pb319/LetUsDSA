@@ -18,7 +18,7 @@ vector<int> bruteProd(vector<int>& nums){
             }
             
         }
-        // cout<<"Prod: "<<prod<<endl;;
+        // cout<<"Prod: "<<prod<<endl;
         ans.push_back(prod);
     }
     return ans;
