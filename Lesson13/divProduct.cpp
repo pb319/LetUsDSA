@@ -14,9 +14,13 @@ vector <int> divProduct(vector <int> nums){
     vector <int> ans;
     int count=0;
     int n = nums.size();
-    while(count<n){
-        
-
+    int mul = 1;
+    for(int num:nums){
+        mul*=num;
+    }
+    // cout<<"Mul: "<<mul;
+    for (int i=0;i<n; i++){
+        ans.push_back(mul/nums[i]);
     }
     return ans;
 }
@@ -25,6 +29,12 @@ int main(){
     vector <int> nums = {1,2,3,4};
     for(int num:nums){
         cout<<num<<" ";
+    }
+    // divProduct(nums);
+
+    cout<<endl;
+    for(int num1:divProduct(nums)){
+        cout<<num1<<" ";
     }
     cout<<endl;
     return 0;
