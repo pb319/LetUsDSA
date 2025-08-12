@@ -4,3 +4,15 @@
 // Input: nums = [1,2,3,4]
 // Output: [24,12,8,6]
 
+#include<iostream>
+#include<vector>
+using namespace std;
+
+vector <int> optProduct(vector <int> nums){
+    
+}
+
+int main(){
+
+    return 0;
+}
