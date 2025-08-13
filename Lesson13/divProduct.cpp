@@ -26,7 +26,7 @@ vector <int> divProduct(vector <int> nums){
 }
 
 int main(){
-    vector <int> nums = {1,2,3,5};
+    vector <int> nums = {1,2,3,6};
     for(int num:nums){
         cout<<num<<" ";
     }
