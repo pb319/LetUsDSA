@@ -9,7 +9,16 @@
 using namespace std;
 
 vector <int> optProduct(vector <int> nums){
-    
+    vector <int> prefix;
+    int count =0 ;
+    int n = prefix.size() ;
+    int fp = 0 ;
+    int bp = n-1 ;
+    int pt ;
+    while(count<n){
+        
+        count++;
+    }
 }
 
 int main(){
