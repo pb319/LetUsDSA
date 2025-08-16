@@ -24,7 +24,7 @@ vector <int> optProduct(vector <int> nums){
         bp --;
         count++;
     }
-    for (int i=0; i<n;i++){
+    for (int i=1; i<n;i++){
         ans.push_back(prefix[i]*suffix[n-i]);
     }
     cout<<endl;
