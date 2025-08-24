@@ -10,14 +10,15 @@ int findIdx(vector <int> nums, int target){
     int ans = 0;
     int n = nums.size();
     int st = ans,end = n-1,mid;
-    while(st<end){
+    while(st<=end){
         mid = (st+end)/2;
         if(nums[mid]<target){
-            st = mid;
+            st = mid+1;
         }else{
-            end = mid;
+            end = mid-1;
         }
-        cout<<" "<<mid;
+        ans = mid;
+        // cout<<" "<<mid;
     }
     if(nums[mid]==target){
         return ans;
