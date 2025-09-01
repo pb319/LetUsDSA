@@ -3,11 +3,49 @@
 
 #include<iostream>
 #include<vector>
+using namespace std;
 
-int findTarget(){
+int findTarget(vector <int> nums, int tar){
+    int mid;
+    int st =0;
+    int en =nums.size()-1;
+    while(st<=en){
+        mid = st + (en-st)/2;
+        if(nums[st]<nums[mid]){
+            if(nums[st]<tar & tar< nums[mid] ){
+                en = mid-1;
+            }else{
+                st = mid+1;
+            }
+        }
+        
+        else if(nums[en]>nums[mid]){
+            if(nums[en]>tar & tar> nums[mid]){
+                st = mid+1;              
+            }else{
+                en = mid-1;
+            }
+        }
+
+        else if(st = en){
+            return mid;
+
+        }
+
+    } 
+    
     return -1;
 }
 
 int main(){
+    vector <int> nums = {9,10,11,17,1,3,6};
+    int tar = 1;
+    cout<<"Given Array: ";
+    for(int val: nums){
+        cout<<val<<" ";
+    }
+    cout<<endl;
+
+    cout<<"Target Index: "<<findTarget(nums,tar)<<endl; 
     return 0;
 }
