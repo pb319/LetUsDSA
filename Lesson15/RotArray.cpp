@@ -11,30 +11,30 @@ int findTarget(vector <int> nums, int tar){
     int en =nums.size()-1;
     while(st<=en){
         mid = st + (en-st)/2;
-        cout<<"Index: "<<mid<<endl;
-        cout<<"Element: "<<nums[mid]<<endl;
+        // cout<<"Index: "<<mid<<endl;
+        // cout<<"Element: "<<nums[mid]<<endl;
         if(nums[st]<nums[mid]){
             if(nums[st]<=tar & tar<= nums[mid] ){
-                cout<<"Inside 11 Block"<<endl;
+                // cout<<"Inside 11 Block"<<endl;
                 en = mid-1;
             }else{
-                cout<<"Inside 12 Block"<<endl;
+                // cout<<"Inside 12 Block"<<endl;
                 st = mid+1;
             }
         }
         
         else if(nums[en]>nums[mid]){
             if(nums[en]>=tar & tar>=nums[mid]){
-                cout<<"Inside 21 Block"<<endl;
+                // cout<<"Inside 21 Block"<<endl;
                 st = mid+1;              
             }else{
-                cout<<"Inside 22 Block"<<endl;
+                // cout<<"Inside 22 Block"<<endl;
                 en = mid-1;
             }
         }
 
         else if(st = en){
-            cout<<"Inside 3 Block"<<endl;
+            // cout<<"Inside 3 Block"<<endl;
             return st;
 
         }
