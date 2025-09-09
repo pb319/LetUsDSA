@@ -33,6 +33,25 @@ int optMountain(vector <int> arr){
     return -1;
 }
 
+int edgeMountain(vector <int> arr){
+    int st =1,en =arr.size()-2;
+    int mid;
+    while(st<=en){
+        mid = st + (en-st)/2;
+        if(arr[mid]>arr[mid-1] & arr[mid]>arr[mid+1]){
+            return mid;
+        }
+        else if(arr[mid]>arr[mid-1]){
+            st = mid+1;
+        }
+        else{
+            en = mid-1;
+        }
+    }
+
+    return -1;
+}
+
 int main(){
     vector <int> arr = {0,1,3,6,7,2,4};
     cout<<"Give Array: "<<endl;
@@ -42,6 +61,7 @@ int main(){
     cout<<endl;
     cout<<"Bruteforce Index: "<<bruteMountain(arr)<<endl;
     cout<<"Optimized Index: "<<optMountain(arr)<<endl;
+    cout<<"Edged Index: "<< edgeMountain(arr)<<endl;
     return 0;
 }
 
