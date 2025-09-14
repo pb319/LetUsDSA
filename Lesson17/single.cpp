@@ -10,15 +10,17 @@ int bruteSingle(vector <int> arr){
     for(int i=0;i<n;i++){
         if(i==0){
             if(arr[i]!= arr[i+1]){
-                return i;
+                return arr[i];
             }
         }
         else if(i==n-1){
-            if(arr[i-1]!= arr[i]);
+            if(arr[i-1]!= arr[i]){
+                return arr[i];
+            };
         }
         else{
             if(arr[i-1]!= arr[i] & arr[i]!= arr[i+1]){
-                return i;
+                return arr[i];
             }
         }
     }
@@ -26,12 +28,19 @@ int bruteSingle(vector <int> arr){
 }
 
 int twopSingle(vector <int> arr){
-    int st = 0, en = arr.size();
+    int n = arr.size();
+    int st = 0, en = n-1;
     int mid;
     // int count=1;
+    if(n==1) return arr[0];
     while(st<=en){
         mid = st + (en-st)/2;
         // cout<<"Step: "<<count<<endl;
+        if(mid==0 & arr[mid]!=arr[mid+1]) return arr[mid];
+        if(mid==n-1 & arr[mid]!=arr[mid-1]) return arr[mid];
+        if(arr[mid-1]!=arr[mid] & arr[mid]!=arr[mid+1]){
+            return arr[mid];
+        }
 
         if(mid%2==0){
             // cout<<"Inside 1"<<endl;
@@ -57,11 +66,6 @@ int twopSingle(vector <int> arr){
         }
         // cout<<"Start: "<<st<<endl;
         // cout<<"End: "<<en<<endl;
-
-        if(st==en){
-            return st;
-        }
-        // count++;
 
     }
     return -1;
