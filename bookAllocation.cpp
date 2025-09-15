@@ -1,0 +1,1 @@
+//There are N books, each ith book has A[i] number of pages
