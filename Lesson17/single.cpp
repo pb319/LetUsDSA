@@ -1,6 +1,6 @@
 // Write a programme to search single element in a repeating sorte array
 // arr1 = [1,1,2,2,3,4,4]
-// arr1 = [1,1,2,2,3,3,4,5,5]
+// arr2 = [1,1,2,2,3,3,4,5,5]
 #include<iostream>
 #include<vector>
 using namespace std;
