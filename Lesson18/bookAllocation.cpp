@@ -6,4 +6,5 @@
 // - Each student has to be allocated at least one book
 // - Allotment should be in contaguous manner
 
-// Calculate and return that minimum possible number. Return -1 if a valid assignment is not possible
+// Calculate and return that minimum possible number. 
+// Return -1 if a valid assignment is not possible
