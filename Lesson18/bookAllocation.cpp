@@ -8,3 +8,13 @@
 
 // Calculate and return that minimum possible number. 
 // Return -1 if a valid assignment is not possible
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main(){
+    
+    return 0;
+}
+
