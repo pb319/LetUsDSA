@@ -7,14 +7,14 @@
 #include<limits>
 using namespace std;
 
-bool isValid(vector <int> arr, int n, int m, int mid){
+bool isValid(vector <int> arr, int n, int m, int maxAllowedPages){
     int stud = 0, count =1;
     for(int i = 0; i<n ;i ++){
 
-        if (arr[i] > mid){
+        if (arr[i] > maxAllowedPages){
             return false;
         }
-        else if (stud<mid)
+        else if (stud + arr[i] <maxAllowedPages)
         {
             stud += arr[i];
         }
@@ -33,9 +33,17 @@ bool isValid(vector <int> arr, int n, int m, int mid){
 }
 
 int bookAllocation(vector <int> arr, int n, int m){
-    int st = arr[0], en = arr[n-1];
+    if(n>m){
+        return -1;
+    }
+
+    int sum= 0;
+    for(int i=0;i<n;i++){
+        sum += arr[i];
+    }
+    int st = 1, en = sum;
     int mid;
-    int ans;
+    int ans = -1;
     while (st<=en)
     {
         if (st==en){
@@ -49,19 +57,22 @@ int bookAllocation(vector <int> arr, int n, int m){
         else{
             st = mid+1;
         }
-    }
+    } 
     
 
-    return -1;
+    return ans;
 }
 
 int main(){
     vector <int> arr = {2,1,3,4};
+    int n = 4, m = 2;
     cout<<"Given Array: "<<endl;
     for(int val:arr){
         cout<<val<<" ";
     }
     cout<<endl;
+    cout<<"Max Book Allocation: "<<endl;
+    cout<<bookAllocation(arr,n,m)<<endl;
 
     
     return 0;
