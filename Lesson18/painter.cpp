@@ -21,7 +21,7 @@ bool isValid(vector <int> arr,int n, int m, int maxLim){
             paint=arr[i];
         }
     }
-    if(paint==m){
+    if(count<=m){
         return true;
     }else false;
 
@@ -29,11 +29,14 @@ bool isValid(vector <int> arr,int n, int m, int maxLim){
 }
 
 int painterPartition(vector <int> arr,int n, int m){
-    int sum =0;
+    int sum =0, max = arr[0];
     for(int i=0;i<n;i++){
+        if(max<arr[i]){
+            max = arr[i];
+        }
         sum+=arr[i];
     }
-    int st = 1, en = sum;
+    int st = max, en = sum;
     int mid, ans =-1;
     while(st<=en){
         mid = st + (st-en)/2;
