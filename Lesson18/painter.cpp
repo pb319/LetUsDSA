@@ -6,14 +6,15 @@ using namespace std;
 
 bool isValid(vector <int> arr,int n, int m, int maxLim){
     int paint=0, count = 1;
-    for (int i = 0; i < count; i++)
-    {
+    for (int i = 0; i < n; i++){ 
+        cout<<"Inside Loop1"<<endl;
         if(arr[i]>maxLim){
             return false;
         }
     }
     
     for(int i =0;i<n;i++){
+        cout<<"Inside Loop2"<<endl;
         if(paint+arr[i]<maxLim){
             paint += arr[i];
         }else{
@@ -31,6 +32,7 @@ bool isValid(vector <int> arr,int n, int m, int maxLim){
 int painterPartition(vector <int> arr,int n, int m){
     int sum =0, max = arr[0];
     for(int i=0;i<n;i++){
+        cout<<"Inside Loop3"<<endl;
         if(max<arr[i]){
             max = arr[i];
         }
@@ -39,6 +41,7 @@ int painterPartition(vector <int> arr,int n, int m){
     int st = max, en = sum;
     int mid, ans =-1;
     while(st<=en){
+        cout<<"Inside Loop4"<<endl;
         mid = st + (st-en)/2;
         if(isValid(arr,n,m,mid)){
             ans = mid;
@@ -57,6 +60,6 @@ int main(){
     for(int val:arr){
         cout<<val<<" ";
     }
-    cout<<endl<<"Painer's Partition: "<<endl;
+    cout<<endl<<"Painer's Partition: "<<painterPartition(arr,arr.size(),3)<<endl;
     return 0;
 }
