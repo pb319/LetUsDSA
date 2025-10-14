@@ -1,4 +1,4 @@
-// Write a programe to assign C Cows to N Stalls such that min distance between them is largest possible. Return largest minimum distance.
+// Write a programe to assign C Cows to N Stalls such that min distance between them is largest possible. Return largest minimum distance.[14:06]
 
 #include<iostream>
 #include<vector>
