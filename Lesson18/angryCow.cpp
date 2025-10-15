@@ -21,16 +21,17 @@ int angryCow(vector <int> arr, int size, int cownum){
         }
     }
     int en = maxm -minm, st =1;
-    int mid;
+    int mid, ans = -1;
     for(int i=0;i<size;i++){
         mid = st + (en-st)/2;
         if(isValid(arr,size,mid)){
+            ans = mid;
             st = mid+1;
         }else{
             en = mid-1;
         }
     }
-    return -1;
+    return ans;
 }
 
 int main(){
