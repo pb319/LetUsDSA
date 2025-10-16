@@ -2,6 +2,7 @@
 
 #include<iostream>
 #include<vector>
+#include<algorithm>
 #include<limits.h>
 using namespace std;
 
@@ -11,16 +12,8 @@ bool isValid(vector <int> arr, int size,  int mlimit){
 }
 
 int angryCow(vector <int> arr, int size, int cownum){
-    int minm = INT_MAX,maxm=INT_MIN;
-    for(int i=0; i<size; i++){
-        if(arr[i]<minm){
-            minm = arr[i];
-        }
-        if(arr[i]>maxm){
-            maxm = arr[i];
-        }
-    }
-    int en = maxm -minm, st =1;
+    sort(arr.begin(),arr.end());
+    int en = arr[0] -arr[size-1], st =1;
     int mid, ans = -1;
     for(int i=0;i<size;i++){
         mid = st + (en-st)/2;
@@ -34,7 +27,9 @@ int angryCow(vector <int> arr, int size, int cownum){
     return ans;
 }
 
-int main(){
-
+int main(){ 
+    vector <int> arr ={1,4,5,2,8};
+    
+    
     return 0;
 }
