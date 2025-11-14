@@ -10,11 +10,11 @@ void bubbleSorted(vector <int> &arr, int size){
     int iter = size;
 
     for(int i=0;i<size;i++){
-       cout<<"Iteration"<<i+i<<endl;
+       cout<<"[Iteration]-"<<i+i<<endl;
 
-       for (int j=0;j<size-i;j++){
+       for (int j=0;j<size-i-1;j++){
          if(arr[j]>arr[j+1]){
-            swap(arr[i],arr[i+1]);
+            swap(arr[j],arr[j+1]);
         }
         for(int val:arr){
         cout<<val<<" ";
@@ -35,5 +35,6 @@ int main(){
     cout<<endl;
     return 0;
 }
+
 
 
