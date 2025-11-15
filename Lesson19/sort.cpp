@@ -1,4 +1,4 @@
-// Write a programme demonstrating the Bubble Sort, Selection Sort and Incertion Sort
+// Write a programme demonstrating the Bubble Sort, Selection Sort and Incertion Sort O(N^2)
 
 
 #include<iostream>
@@ -25,14 +25,38 @@ void bubbleSorted(vector <int> &arr, int size){
     }
 }
 
+void bubbleSort(int arr[], int size){
+    for(int i =0;i<size;i++){
+        for(int j=0;j<size-i-1;j++){
+            if(arr[j]>arr[j+1]){
+                swap(arr[j],arr[j+1]);
+            }
+        }
+    }
+}
+
+void printArray(int arr[], int size){
+    for(int i =0; i<size;i++){
+        cout<<arr[i]<<" ";
+    }
+    cout<<endl;
+}
+
 
 int main(){
-    vector <int> arr = {4,1,5,2,3};
-    bubbleSorted(arr,arr.size());
-    for(int val:arr){
+    vector <int> arr1 = {4,1,5,2,3};
+    bubbleSorted(arr1,arr1.size());
+    cout<<"Approach-1: "<<endl;
+    for(int val:arr1){
         cout<<val<<" ";
     }
     cout<<endl;
+    
+    int arr2[] = {4,1,5,2,3};
+    cout<<"Approach-2: "<<endl;
+    bubbleSort(arr2,5);
+    printArray(arr2,5);
+
     return 0;
 }
 
