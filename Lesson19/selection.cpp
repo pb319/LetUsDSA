@@ -2,7 +2,7 @@
 #include<iostream>
 using namespace std;
 
-void selectionSort(int arr[], int size){
+void insertionSort(int arr[], int size){
     for(int i=0;i<size;i++){
         int curr = arr[i];
         for(int j= i-1;j>=0;j++){
@@ -26,7 +26,7 @@ void printArray(int arr[], int size){
 
 int main(){
     int arr[]={4,3,2,1,5};
-    selectionSort(arr,5);
+    insertionSort(arr,5);
     printArray(arr,5);
     return 0;
 }
