@@ -16,6 +16,17 @@ void selectionSort(int arr[], int size){
     }
 }
 
+void printArray(int arr[], int size){
+    for(int i=0;i<size;i++){
+        cout<<arr[i]<<" ";
+    }
+    cout<<endl;
+}
+
+
 int main(){
+    int arr[]={4,3,2,1,5};
+    selectionSort(arr,5);
+    printArray(arr,5);
     return 0;
 }
