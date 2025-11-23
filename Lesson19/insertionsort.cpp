@@ -12,7 +12,7 @@ void insertionSort(int arr[], int size){
             }else{
                 break;
             }
-            cout<<"Status After "<< i<<j<<" "<<endl;
+            cout<<"Status After "<<"i= "<<i<<" j= "<<j<<" "<<endl; //debugging
             for(int i=0;i<size;i++){
             cout<<arr[i]<<" ";
             }
