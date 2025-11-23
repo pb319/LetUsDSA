@@ -7,7 +7,7 @@ void insertionSort(int arr[], int size){
         int curr = arr[i];
         for(int j= i-1;j>=0;j--){
             if(arr[j]>curr){
-                arr[i]=arr[j];
+                arr[j+1]=arr[j];
                 arr[j]=curr;
             }else{
                 break;
