@@ -24,7 +24,15 @@ void insertionSort(int arr[], int size){
 }
 
 void alterInsertion(int arr[],int size){
-    
+    for(int i=0;i<size;i++){
+        int curr = arr[i];
+        int prev = i-1;
+        while(prev>=0 && arr[prev]<curr){
+            arr[prev+1]=arr[prev];
+            prev--;
+        }
+        arr[prev+1]=curr;
+    }
 }
 
 void printArray(int arr[], int size){
@@ -38,6 +46,7 @@ void printArray(int arr[], int size){
 int main(){
     int arr[]={4,3,2,1,5};
     insertionSort(arr,5);
+    alterInsertion(arr,5);
     printArray(arr,5);
     return 0;
 }
