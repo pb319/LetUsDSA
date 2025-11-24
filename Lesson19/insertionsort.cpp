@@ -46,7 +46,7 @@ void printArray(int arr[], int size){
 int main(){
     int arr[]={4,3,2,1,5};
     insertionSort(arr,5);
-    cout<<"\n"<<"Alternative: "<<endl;
+    cout<<"Alternative(Descending Order): "<<endl;
     alterInsertion(arr,5);
     printArray(arr,5);
     return 0;
