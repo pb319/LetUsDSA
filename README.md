@@ -3,4 +3,4 @@ This repository marks a new beginning of problem-solving with the DSA series in 
 
 ## Table of Cotent: 
 - Lesson 1 : Variable,Datatype,Operator, and Boiler Plate.
-- 
+- Lesson 2 : Conditional Statements and Loops
