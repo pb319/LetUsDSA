@@ -7,4 +7,4 @@ This repository marks a new beginning of problem-solving with the DSA series in 
 - Lesson 3 : Pattern Problems
 - Lesson 4 : Functions
 - Lesson 5 : Binary Number System
-- lesson 8 : Binary System
+- lesson 6 : Binary System
