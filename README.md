@@ -9,4 +9,5 @@ This repository marks a new beginning of problem-solving with the DSA series in 
 - Lesson 5 : Binary Number System
 - lesson 6 : Binary System
 - Lesson 7 : Bitwise Operator and Data Modifier
+- Lesson 8 : Array Data Structure
 
