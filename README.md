@@ -11,3 +11,4 @@ This repository marks a new beginning of problem-solving with the DSA series in 
 - Lesson 7 : Bitwise Operator and Data Modifier
 - Lesson 8 : Array and Vector Data Structure
 - Lesson 9 : Maximum Subarray Sum and Majority Element
+- Lesson 10: Majority Element 
