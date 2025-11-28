@@ -13,3 +13,4 @@ This repository marks a new beginning of problem-solving with the DSA series in 
 - Lesson 9 : Maximum Subarray Sum and Majority Element
 - Lesson 10: Majority Element 
 - Lesson 11: Time Complexity
+- Lesson 12: Pointers
