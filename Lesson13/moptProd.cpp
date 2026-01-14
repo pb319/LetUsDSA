@@ -1,4 +1,4 @@
-// The most optimized (time & Space) code for Product of An Array
+// The most optimized (time & space) code for Product of An Array
 #include<iostream>
 #include<vector>
 using namespace std;
