@@ -11,16 +11,13 @@ void main()
     printf("Address of Input: %d\n",pt1);
     printf("Address of Input: %d\n",pt2);
     printf("Difference: %d\n", pt2 - pt1);
+    
     printf("--- Integer Types ---\n");
     printf("char      : %zu byte(s)\n", sizeof(char));
-    printf("short     : %zu byte(s)\n", sizeof(short));
     printf("int       : %zu byte(s)\n", sizeof(int));
-    printf("long      : %zu byte(s)\n", sizeof(long));
-    printf("long long : %zu byte(s)\n", sizeof(long long));
 
     printf("\n--- Floating-Point Types ---\n");
     printf("float     : %zu byte(s)\n", sizeof(float));
-    printf("double    : %zu byte(s)\n", sizeof(double));
     
     printf("\n--- Pointer Types ---\n");
     printf("int*      : %zu byte(s)\n", sizeof(int*));
