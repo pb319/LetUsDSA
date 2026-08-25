@@ -28,6 +28,11 @@ void main(){
     //     printf("\n");
     // }
 
-    // printf("Thank You\n");
+    printf("arr1: %u\n",arr1);//nase-address
+    printf("&arr1: %u\n",&arr1);
+    printf("arr1+1: %u\n",arr1+1);//address of arr1[1][0]
+    printf("&arr1+1: %u\n",&arr1+1);
+    printf("&arr1[1][2]: %u\n",&arr1[1][2]);
+    printf("&arr1[1][2]+1: %u\n",&arr1[1][2]+1);
     return;
 }
