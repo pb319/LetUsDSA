@@ -34,5 +34,8 @@ void main(){
     printf("&arr1+1: %u\n",&arr1+1);
     printf("&arr1[1][2]: %u\n",&arr1[1][2]);
     printf("&arr1[1][2]+1: %u\n",&arr1[1][2]+1);
+    printf("*(arr1+1): %u\n",*(arr1+1)); //Address of 2nd Row
+    printf("*(*(arr1+1)): %u\n",*(*(arr1+1))); //1st element of 2nd Row
+
     return;
 }
