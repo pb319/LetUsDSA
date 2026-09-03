@@ -18,7 +18,7 @@ void main(){
     printf("Enter Fees:\n");
     scanf("%f",&s1.fees);
     
-    printf("Roll Number-%d Enrollment Complete\n",s1.rno);
+    printf("Enrollment of Roll Number-%d Complete\n",s1.rno);
 
 
     return;
