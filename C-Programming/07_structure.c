@@ -21,7 +21,7 @@ void main(){
     printf("Enrollment of Roll Number-%d Complete\n",s1.rno);
     printf("The Pointer stores %u\n",s);
     printf("The Pointer points to %d\n",*s);
-    printf("The (*s+1) points to %u\n",(*s+1));
+    // printf("The (*s+1) points to %u\n",(*s+1));
     printf("Address of s1.age %u\n",&(s1.age));
     printf("The s->age points to %u\n",s->age);
 
