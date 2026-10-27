@@ -6,11 +6,11 @@ struct node{
 };
 
 // create a function to create nodes
-void createnode(int item, struct node* start){
+void createnode(int item, struct node** start){
     struct node* n = (struct node*) malloc(sizeof(struct node));
     n->data= item;
-    n->list= start;
-    start= n;
+    n->list= *start;
+    *start= n;
 }
 
 
@@ -32,7 +32,7 @@ void main(){
     n->list= start;
     start= n;
 
-    createnode(1,start);
+    createnode(1,&start);
     printf("You Liked List is as follows:\n");
     // traversing a Linked List
     struct node* p;
