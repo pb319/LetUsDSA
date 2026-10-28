@@ -4,6 +4,18 @@ struct node{
     int data;
     struct node* list;
 };
+//traversing a given singly linked list
+void travlink(struct node* start){
+    struct node* p = start;
+    printf("You Liked List is as follows:\n");
+    int count =0;
+    while(p != NULL){
+        count++;
+        printf("Node %d: |%d |%u |\n", count,p->data,p);
+        p=p->list;
+    }
+    
+}
 
 // create a function to create nodes
 void createnode(int item, struct node** start){
@@ -12,6 +24,17 @@ void createnode(int item, struct node** start){
     n->list= *start;
     *start= n;
 }
+
+// create a function to insert an element at given location
+void insertnode(int item, struct node** loc){
+    struct node* n= (struct node*) malloc(sizeof(struct node));
+    n->data= item;
+    n->list= *loc;
+    *loc= n;
+
+}
+
+// deletion of a node at given location
 
 
 void main(){
@@ -32,17 +55,9 @@ void main(){
     n->list= start;
     start= n;
 
+    insertnode(11,&(start->list));
     createnode(1,&start);
-    printf("You Liked List is as follows:\n");
-    // traversing a Linked List
-    struct node* p;
-    p= start;
-    int count =0;
-    while(p != NULL){
-        count++;
-        printf("Node %d: |%d |%u |\n", count,p->data,p);
-        p=p->list;
-    }
+    travlink(start);
 
 
 }
