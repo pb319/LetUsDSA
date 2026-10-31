@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<stdlib.h>
+#include<stdlib.h> // included to use dynamic memory allocation functions
 struct node{
     int data;
     struct node* list;
